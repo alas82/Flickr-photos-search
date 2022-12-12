@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = -8
+  Height = 370
+  Top = -8
+  Width = 990
+  Caption = 'Photos Explorer 1.0'
+  ClientHeight = 370
+  ClientWidth = 990
+  Position = poScreenCenter
+  WindowState = wsMaximized
+  object ListBox1: TListBox
+    Left = 0
+    Height = 370
+    Top = 0
+    Width = 216
+    Align = alLeft
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    TabOrder = 0
+  end
+  object Splitter1: TSplitter
+    Left = 216
+    Height = 370
+    Top = 0
+    Width = 5
+  end
+  object Panel1: TPanel
+    Left = 221
+    Height = 370
+    Top = 0
+    Width = 769
+    Align = alClient
+    ClientHeight = 370
+    ClientWidth = 769
+    TabOrder = 2
+    object Panel3: TPanel
+      Left = 1
+      Height = 321
+      Top = 48
+      Width = 767
+      Align = alClient
+      BevelOuter = bvNone
+      ClientHeight = 321
+      ClientWidth = 767
+      TabOrder = 0
+      object Image1: TImage
+        Left = 0
+        Height = 321
+        Top = 0
+        Width = 767
+        Align = alClient
+        Center = True
+        Proportional = True
+        Stretch = True
+      end
+    end
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 5
+      Top = 43
+      Width = 767
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object Panel2: TPanel
+      Left = 1
+      Height = 42
+      Top = 1
+      Width = 767
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 42
+      ClientWidth = 767
+      TabOrder = 2
+      object Edit1: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 472
+        TabOrder = 0
+        Text = 'mountain'
+      end
+      object Button1: TButton
+        Left = 488
+        Height = 25
+        Top = 8
+        Width = 64
+        Caption = 'S&earch'
+        Default = True
+        OnClick = Button1Click
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 568
+        Height = 25
+        Top = 8
+        Width = 75
+        Caption = 'Save photo'
+        Enabled = False
+        OnClick = Button2Click
+        TabOrder = 2
+      end
+      object Button3: TButton
+        Left = 656
+        Height = 25
+        Top = 7
+        Width = 75
+        Caption = 'Set desktop'
+        Enabled = False
+        OnClick = Button3Click
+        TabOrder = 3
+      end
+      object Label1: TLabel
+        Left = 736
+        Height = 15
+        Top = 8
+        Width = 107
+        Caption = 'alaa178@gmail.com'
+        ParentColor = False
+      end
+    end
+  end
+end
